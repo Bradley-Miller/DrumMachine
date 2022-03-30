@@ -1,0 +1,15 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/ddrums-one-one
+ddrums-one-one.so
+ddrums-one-one.dylib
+ddrums-one-one.dll
+ddrums-one-one.a
+ddrums-one-one.lib
+ddrums-one-one-test-*
+*.exe
+*.o
+*.obj
+*.lst

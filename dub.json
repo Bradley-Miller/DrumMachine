@@ -1,0 +1,14 @@
+{
+	"authors": [
+		"Bradley Miller"
+	],
+	"copyright": "Copyright © 2021, Bradley Miller",
+	"dependencies": {
+		"derelict_extras-bass": "~>2.2.0",
+		"gtk-d": "~>3.10.0",
+		"timer": "~>0.6.1"
+	},
+	"description": "Drum Machine in D",
+	"license": "Boost",
+	"name": "ddrums-one-one"
+}
