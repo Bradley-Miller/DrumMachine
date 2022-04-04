@@ -43,13 +43,13 @@ void playNotes(int column){
 		}
 	//This works but we need to either change the names of the notes and edit the
 	//music file sof rmakiing the music slower.
-		if(dropDownMenu[column]=="Quarter"){
+		if(dropDownMenu[column]=="Quarter" && skip[column] == 0){
 			countms.start(timerCount);
 		}
-		else if(dropDownMenu[column] == "Eight"){
+		else if(dropDownMenu[column] == "Eight" && skip[column] == 0){
 			countms.start(timerCount/2);
 		}
-		else if(dropDownMenu[column] == "Sixteenth"){
+		else if(dropDownMenu[column] == "Sixteenth" && skip[column] == 0){
 			countms.start(timerCount/4);
 		}
 

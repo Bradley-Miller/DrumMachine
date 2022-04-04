@@ -141,6 +141,7 @@ class WorkSpace : Box{
 			for(int i = 0; i<10; i++){
 				//Trying to get concurrency up...
 			//	auto task1 = task!
+			//Tid worker;
 				playNotes(i);
 				//task1.executeInNewThread();
 				//task1.yieldForce;
@@ -156,6 +157,7 @@ class WorkSpace : Box{
 		BASS_Init(-1, 44_100, 0, cast(void*) 0, null);
 		writeln("This is the stop button");
 		stopEverything();
+		//worker.send();
 	//	BASS_ChannelStop();
 	}
 		
