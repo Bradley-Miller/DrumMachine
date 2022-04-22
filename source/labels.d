@@ -1,8 +1,11 @@
 import gtk.Label;
 import gtk.EventBox;
+import gtk.CssProvider;
+import gtk.StyleContext;
 import app;
 import switches;
 import grid;
+import css;
 
 //Contains all the labels
 
@@ -26,6 +29,7 @@ class WideLabel : EventBox
 
 class BassLabel : EventBox{
 	
+	CSS css;
 	Label label;
 	
 	string labelText = " Bass Drum ";
@@ -34,6 +38,7 @@ class BassLabel : EventBox{
 	{
 		super();
 		label = new Label(labelText);
+		css = new CSS(getStyleContext());
 		add(label);
 }
 }
@@ -41,6 +46,7 @@ class BassLabel : EventBox{
 
 class SnareLabel : EventBox{
 	
+	CSS css;
 	Label label;
 	
 	string labelText = " Snare Drum ";
@@ -49,12 +55,14 @@ class SnareLabel : EventBox{
 	{
 		super();
 		label = new Label(labelText);
+		css = new CSS(getStyleContext());
 		add(label);
 }
 }
 
 class HiHatLabel : EventBox{
 	
+	CSS css;
 	Label label;
 	
 	string labelText = " Hi-Hat ";
@@ -63,12 +71,14 @@ class HiHatLabel : EventBox{
 	{
 		super();
 		label = new Label(labelText);
+		css = new CSS(getStyleContext());
 		add(label);
 }
 }
 
 class TomTomLabel : EventBox{
 	
+	CSS css;
 	Label label;
 	
 	string labelText = " Tom-Tom ";
@@ -77,6 +87,7 @@ class TomTomLabel : EventBox{
 	{
 		super();
 		label = new Label(labelText);
+		css = new CSS(getStyleContext());
 		add(label);
 }
 }
@@ -84,6 +95,7 @@ class TomTomLabel : EventBox{
 
 class CrashLabel : EventBox{
 	
+	CSS css;
 	Label label;
 	
 	string labelText = " Crash ";
@@ -92,6 +104,7 @@ class CrashLabel : EventBox{
 	{
 		super();
 		label = new Label(labelText);
+		css = new CSS(getStyleContext());
 		add(label);
 }
 }
@@ -99,6 +112,7 @@ class CrashLabel : EventBox{
 
 class RideLabel : EventBox{
 	
+	CSS css;
 	Label label;
 	
 	string labelText = " Ride ";
@@ -107,12 +121,14 @@ class RideLabel : EventBox{
 	{
 		super();
 		label = new Label(labelText);
+		css = new CSS(getStyleContext());
 		add(label);
 }
 }
 
 class SkipLabel : EventBox{
 	
+	CSS css;
 	Label label;
 	
 	string labelText = " SKIP ";
@@ -121,6 +137,7 @@ class SkipLabel : EventBox{
 	{
 		super();
 		label = new Label(labelText);
+		css = new CSS(getStyleContext());
 		add(label);
 }
 }

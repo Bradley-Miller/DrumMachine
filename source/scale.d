@@ -3,17 +3,21 @@ import app;
 import grid;
 import gtk.Scale;
 import gtk.Range;
+import css;
 
 class MyScale : Scale
 {
+	CSS css;
 	double minimum = 1;
-	double maximum = 100;
+	double maximum = 1000;
 	double step = 1;
 
 	this()
 	{
 		super(Orientation.HORIZONTAL, minimum, maximum, step);
+		css = new CSS(getStyleContext());
 		addOnValueChanged(&valueChanged);
+		
 		
 	} 
 	
@@ -30,6 +34,7 @@ class MyScale : Scale
 
 class MyScaleTempo : Scale
 {	
+	CSS css;
 	double minimum = 60;
 	double maximum = 120;
 	double step = 30;
@@ -37,6 +42,7 @@ class MyScaleTempo : Scale
 	this()
 	{
 		super(Orientation.HORIZONTAL, minimum, maximum, step);
+		css = new CSS(getStyleContext());
 		addOnValueChanged(&valueChanged);
 		
 	} 

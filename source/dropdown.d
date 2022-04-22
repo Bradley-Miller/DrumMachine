@@ -2,10 +2,14 @@ import std.stdio;
 import gtk.ComboBoxText;
 import grid;
 import app;
+import css;
+
 
 //We can try to add images later...
 
 class DropDown : ComboBoxText{
+    
+	CSS css;
     int num;
     string[] type = ["Quarter", "Eight", "Sixteenth"];
     bool entryOn = false;
@@ -13,6 +17,7 @@ class DropDown : ComboBoxText{
     this(int num){
         this.num = num;
         super(entryOn);
+      //  css = new CSS(getStyleContext());
 
         foreach(type; type){
             appendText(type);
@@ -21,6 +26,7 @@ class DropDown : ComboBoxText{
         dropDownMenu[num] = getActiveText;
 
         addOnChanged(&doSomething);
+          css = new CSS(getStyleContext());
     }
 
     void doSomething(ComboBoxText j){

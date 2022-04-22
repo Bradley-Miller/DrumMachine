@@ -3,6 +3,7 @@ import gtk.Switch;
 import app;
 import grid;
 import labels;
+import css;
 
 //Contains all the switches
 
@@ -11,11 +12,14 @@ import labels;
 
 class BassSwitch : Switch{
 	int num;
-	
-	this(int num){
+	CSS css;
+
+	this(int num, string cssName){
 		this.num = num;
 		super();
+		setName(cssName);
 		addOnStateSet(&onStateSet);
+		css = new CSS(getStyleContext());
 	}
 	
 	bool onStateSet(bool state, Switch b){
@@ -38,11 +42,14 @@ class BassSwitch : Switch{
 
 class SnareSwitch : Switch{
 	int num;
+	CSS css;
 
-	this(int num){
+	this(int num, string cssName){
 		this.num = num;
 		super();
+		setName(cssName);
 		addOnStateSet(&onStateSet);
+		css = new CSS(getStyleContext());
 	}
 	
 	bool onStateSet(bool state, Switch s){
@@ -64,11 +71,14 @@ class SnareSwitch : Switch{
 
 class HiHatSwitch : Switch{
 	int num;
+	CSS css;
 
-	this(int num){
+	this(int num, string cssName){
 		this.num = num;
 		super();
+		setName(cssName);
 		addOnStateSet(&onStateSet);
+		css = new CSS(getStyleContext());
 	}
 	
 	bool onStateSet(bool state, Switch h){
@@ -90,11 +100,14 @@ class HiHatSwitch : Switch{
 
 class TomTomSwitch : Switch{
 	int num;
+	CSS css;
 
-	this(int num){
+	this(int num, string cssName){
 		this.num = num;
 		super();
+		setName(cssName);
 		addOnStateSet(&onStateSet);
+		css = new CSS(getStyleContext());
 	}
 	
 	bool onStateSet(bool state, Switch t){
@@ -115,11 +128,14 @@ class TomTomSwitch : Switch{
 
 class CrashSwitch : Switch{
 	int num;
+	CSS css;
 	
-	this(int num){
+	this(int num, string cssName){
 		this.num = num;
 		super();
+		setName(cssName);
 		addOnStateSet(&onStateSet);
+		css = new CSS(getStyleContext());
 	}
 	
 	bool onStateSet(bool state, Switch c){
@@ -140,11 +156,14 @@ class CrashSwitch : Switch{
 
 class RideSwitch : Switch{
 	int num;
+	CSS css;
 	
-	this(int num){
+	this(int num, string cssName){
 		this.num = num;
 		super();
+		setName(cssName);
 		addOnStateSet(&onStateSet);
+		css = new CSS(getStyleContext());
 	}
 	
 	bool onStateSet(bool state, Switch c){
@@ -165,11 +184,14 @@ class RideSwitch : Switch{
 
 class SkipSwitch : Switch{
 	int num;
+	CSS css;
 	
-	this(int num){
+	this(int num, string cssName){
 		this.num = num;
 		super();
+		setName(cssName);
 		addOnStateSet(&onStateSet);
+		css = new CSS(getStyleContext());
 	}
 	
 	bool onStateSet(bool state, Switch c){

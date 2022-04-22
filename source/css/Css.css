@@ -1,0 +1,96 @@
+#bassSwitch slider{
+    background: lime;
+}
+
+#bassSwitch :checked{
+    color: lime;
+}
+
+#snareSwitch slider{
+    background: red;
+}
+
+#snareSwitch :checked{
+    color: red;
+}
+
+#hiHatSwitch slider{
+    background: aqua
+}
+
+#hiHatSwitch :checked{
+    color: aqua;
+}
+
+#tomTomSwitch slider{
+    background: orange
+}
+#tomTomSwitch :checked{
+    color: orange;
+}
+
+#crashSwitch slider{
+    background: violet
+}
+
+#crashSwitch :checked{
+    color: violet
+}
+
+#rideSwitch slider{
+    background: yellow
+}
+
+#rideSwitch :checked{
+    color: yellow
+}
+
+#skipSwitch slider{
+    background: gray;
+}
+#skipSwitch :checked{
+    color: grey
+}
+
+/* trying to get the switches to be unique */
+
+
+switch slider{
+    border:3px;
+}
+
+switch{
+    background: black;
+}
+
+box{
+    background: black;
+    color: white;
+}
+
+scale{
+    color: white;
+}
+
+scale trough{
+    background-color: red;
+}
+
+/* Combobox works but can't change the text color for some reason*/
+
+combobox box{
+    caret-color: aqua;
+
+    text-decoration-color:blue;
+    color:blue;
+    background-color:black;
+}
+
+combobox *{
+    caret-color: aqua;
+    color:blue;
+}
+
+button label{
+    color:red;
+}

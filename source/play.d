@@ -23,6 +23,7 @@ import derelict.bass.bass;
 	HSTREAM rideStream; 
 
 void playNotes(int column){
+	
 
 	bassStream =  BASS_StreamCreateFile(false, cast(void*) bassString, 0, 0, 0);
 	snareStream = BASS_StreamCreateFile(false, cast(void*) snareString, 0, 0, 0);
@@ -37,6 +38,9 @@ void playNotes(int column){
     Countdown countms;
 		//THE GREAT WALL OF IF/ELSE STATEMENTS
 	//Nothing!
+	if(column == -1){
+		keepGoing=0;
+	}
 	if(keepGoing==1){
 		if(skip[column]==1){
 			countms.start(0);
