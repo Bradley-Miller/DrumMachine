@@ -3,3 +3,4 @@ This project was originally a CMPS 401 project that after the class ended, I dec
 Originally called "DDrums", I decided to go for a less copyright-infringing name after I found out that ddrum is an actually company. 
 DrumMachineD is a drum machine that is written in D, utilizing a D binding for the BASS audio library, gtk-D for widgits, and a timer library to provide a milisecond timer. It also uses the DUB package manager. 
 Also huge thanks to freewavesamples.com for the audio files.
+If you're interested in using gtk-D, then the blog gtkDcoding by Ron Tarrant is a great resourse that has helped me out tremendously.
